@@ -8,7 +8,7 @@
 ### General Requirements
 - Webpage must **NOT** use a CSS framework such as Bootstrap, Foundation, etc.
 - Webpage must be responsive. Its mobile look is up to you.
-- JavaScript will be used heavily. You may use either Vue.js or vanilla JavaScript.
+- JavaScript will be used heavily. You may use either Vue, React, Angular, or vanilla JavaScript. Vue.js is highly recommended as that is our choice of framework.
 
 ### API Use
 To get TMDb API token, visit the API tab in your [account settings](https://www.themoviedb.org/settings/api).
