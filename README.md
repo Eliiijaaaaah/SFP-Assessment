@@ -17,10 +17,10 @@ Once you have landed on the API details page, click to generate an API key at th
 You will need to figure out on your own how to use the API token, as well as what routes you need to use.
 
 ### Colors
-Green: #64BD7A
-Light Gray: #F2F5F8
-Black: #F2F5F8
-Bluish Gray (The text on gray buttons): #5A6375
+- Green: #64BD7A
+- Light Gray: #F2F5F8
+- Black: #F2F5F8
+- Bluish Gray (The text on gray buttons): #5A6375
 
 ### Style Guidelines
 - Grid has a max-width of 1160px
