@@ -8,8 +8,8 @@ Here is how the application must function:
 
 ### General Requirements
 - Webpage must **NOT** use a CSS framework such as Bootstrap, Foundation, etc.
-- Webpage must be responsive. Its mobile look is up to you.
-- JavaScript will be used heavily. You may use either Vue, React, Angular, or vanilla JavaScript. Vue.js is highly recommended as that is our choice of framework.
+- Webpage **must be responsive**. Its mobile look is up to you.
+- JavaScript will be used heavily. You may use either Vue, React, Angular, jQuery or vanilla JavaScript. Vue.js is highly recommended as that is our choice of framework.
 
 ### API Use
 First, you must [login](https://www.themoviedb.org/login) or [create an account](https://www.themoviedb.org/account/signup) with TMDb.
