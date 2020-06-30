@@ -26,5 +26,5 @@ You will need to figure out on your own how to use the API token, as well as wha
 
 ### Style Guidelines
 - Grid has a max-width of 1160px
-- Reference assessment.png above or view the [Link To Design File](https://www.figma.com/file/hXc9GdswxKwOhXDWypNUYc/Movie-App?node-id=0%3A1)
+- Reference assessment.png above or view the [Link To Design File](https://www.figma.com/file/NO15PRTCxfmuoVr22ubz1f/Movie-App-Copy?node-id=0%3A1)
 - *PLEASE NOTE: The design file is just an example and only uses one movie title. Your application should show multiple movie titles.*
