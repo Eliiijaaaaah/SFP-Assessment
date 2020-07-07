@@ -30,4 +30,4 @@ You will need to figure out on your own how to use the API token, as well as wha
 - *PLEASE NOTE: The design file is just an example and only uses one movie title. Your application should show multiple movie titles.*
 
 ### When complete
-- Send a zipped file of the project to meeks@sfp.net or send a link of the Github repo.
+- Send an email to meeks@sfp.net containing a zipped file of the project or link to a Github repo.
