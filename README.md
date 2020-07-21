@@ -25,7 +25,6 @@ You will need to figure out on your own how to use the API token, as well as wha
 - 27 Horror Movies
 
 ### Style Guidelines
-<<<<<<< HEAD
 - Grid has a max-width of 1200px
 - Reference assessment.psd above. ***If you do not have Photoshop, the assets have been provided and styles are listed below.***
 - *PLEASE NOTE: The design file is just an example and only uses one movie title. Your application should show multiple movie titles.*
