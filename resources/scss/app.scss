@@ -1,0 +1,46 @@
+body {
+	margin: auto;
+	max-width: 1200px;
+}
+
+.app {
+	padding: 2em 0;
+}
+
+.container {
+	padding: 0 1em;
+}
+
+.grid {
+	display: flex;
+	padding-top: 1em;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.movie {
+	width: 200px;
+	margin: 0 .5em 1em;
+
+	.poster {
+		height: 300px;
+		width: 100%;
+		margin-bottom: 1em;
+		box-shadow: 1px 1px 20px #c7c7c7;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.title {
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	.rating {
+		color: #b8b8b8;
+		font-size: 14px;
+		margin: 0;
+	}
+}

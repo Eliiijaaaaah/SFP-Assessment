@@ -1,3 +1,8 @@
+### Setup
+1. `git clone git@gitlab.sfp.cc:sfp/sfp-frontend-assessment.git`
+2. `npm install`
+3. `npm run watch`
+
 ### Functionality of Application
 Here is how the application must function:
 - Genres to include: Action, Animation, Crime, Drama, Fantasy, Horror.
@@ -6,28 +11,21 @@ Here is how the application must function:
 
 ### General Requirements
 - Webpage must **NOT** use a CSS framework such as Bootstrap, Foundation, etc.
-- Webpage **must be responsive**. Its mobile look is up to you.
-- JavaScript will be used heavily. You may use either Vue, React, Angular, jQuery or vanilla JavaScript. Vue.js is highly recommended as that is our choice of framework.
+- Webpage **must be responsive**. Mobile designs are provided.
+- You may complete the assessment in any frontend framework (or lack of).
+- We have provided boilerplate code to help you get started (we are using Vue.js), you can scrap it all or build off of it.
 
 ### API Use
 First, you must [login](https://www.themoviedb.org/login) or [create an account](https://www.themoviedb.org/account/signup) with TMDb.
 To get TMDb API token, visit the API tab in your [account settings](https://www.themoviedb.org/settings/api).
 Once you have landed on the API details page, click to generate an API key at the bottom of the page.
 
-You will need to figure out on your own how to use the API token, as well as what routes you need to use.
-
-#### Genre IDs
-- 28 Action Movies
-- 16 Animation Movies
-- 80 Crime Movies
-- 18 Drama Movies
-- 14 Fantasy Movies
-- 27 Horror Movies
+You will need to figure out on your own how to use the API token, as well as what route you will need to use to generate the grid of movies.
 
 ### Style Guidelines
 - Grid has a max-width of 1200px
-- Reference assessment.psd above. ***If you do not have Photoshop, the assets have been provided and styles are listed below.***
-- *PLEASE NOTE: The design file is just an example and only uses one movie title. Your application should show multiple movie titles.*
+- Please match the designs provided in the "Design Files" folder as close as possible.
+- *PLEASE NOTE: The design files are just examples and only uses one movie title. Your application should show multiple movie titles from the API.*
 
 ### Colors
 - Gray (Gray text): #b8b8b8 
@@ -37,13 +35,13 @@ You will need to figure out on your own how to use the API token, as well as wha
 
 ### Font Sizes
 - Navigation: 16px
-- Main Title (H1): 100px
-- Subheading (H2): 72px
-- Button: 24px
+- Main Title (H1): 72px
+- Subheading (H2): 62px
+- Button: 18px
 - Paragraph Text: 16px
-- Movie Titles: 22px
-- Movie Ratings: 16px
-- Pagination: 24px
+- Movie Titles: 18px
+- Movie Ratings: 14px
+- Pagination: 16px
 
 ### Font Families
 - Navigation (Current Genre): Lato Black
