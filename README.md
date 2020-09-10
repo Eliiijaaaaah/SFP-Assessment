@@ -14,6 +14,7 @@ Here is how the application must function:
 - Webpage **must be responsive**. Mobile designs are provided.
 - You may complete the assessment in any frontend framework (or lack of).
 - We have provided boilerplate code to help you get started (we are using Vue.js), you can scrap it all or build off of it.
+- Commit regularly so we can see your progress :D
 
 ### API Use
 First, you must [login](https://www.themoviedb.org/login) or [create an account](https://www.themoviedb.org/account/signup) with TMDb.
