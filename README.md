@@ -1,5 +1,5 @@
 ### Setup
-1. `git clone git@gitlab.sfp.cc:sfp/sfp-frontend-assessment.git`
+1. `git clone https://gitlab.sfp.cc/sfp/sfp-frontend-assessment.git`
 2. `npm install`
 3. `npm run watch`
 
