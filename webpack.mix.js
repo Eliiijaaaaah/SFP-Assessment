@@ -15,9 +15,14 @@ mix.js('resources/js/app.js', 'public/assets')
 	.sass('resources/scss/app.scss', 'public/assets')
 	.browserSync({
 		files: [
-			'public/index.html',
+			'./public/index.html',
 			'resources/**/*'
-		]})
+		],
+		proxy: false,
+		server: {
+		    baseDir: "public",
+		    index: 'index.html'
+		}})
 	.options({
 	    postCss: [
 	        require('autoprefixer')({
