@@ -25,9 +25,7 @@ mix.js('resources/js/app.js', 'public/assets')
 		}})
 	.options({
 	    postCss: [
-	        require('autoprefixer')({
-	            browsers: ['last 40 versions'],
-	        })
+	        require('autoprefixer')
 	    ]
 	}
 );
