@@ -69,11 +69,20 @@ nav {
   background: rgba(0, 0, 0, 0.5);
 }
 
+ul {
+  color: #b8b8b8;
+}
+
+ul > .active {
+  color: #ffffff;
+}
+
 nav > div > ul {
-  padding: 0;
   margin: 0;
   float: right;
-  padding: 1rem;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 nav > div > ul > li {
@@ -123,6 +132,11 @@ nav > div {
   padding-left: 10%;
   padding-right: 10%;
   text-align: center;
+  color: #3f3f3f;
+}
+
+.app > p {
+  color: #b8b8b8;
 }
 
 .app > h2 {
@@ -133,7 +147,7 @@ nav > div {
 .paginate > li {
   font-size: 16px;
   padding: 1rem;
-  color: #111111;
+  color: #3f3f3f;
   text-decoration: none;
   display: inline-block;
 }
@@ -175,9 +189,16 @@ nav > div {
     background-color: #111111;
   }
 
-  .mobile-menu > li {
+  .mobile-menu > ul {
     display: block;
     background-color: #111111;
+    list-style-type: none;
+    padding-top: 4rem;
+  }
+
+  .mobile-menu > ul > li {
+    padding: 1rem;
+    font-size: 22px;
   }
 }
 

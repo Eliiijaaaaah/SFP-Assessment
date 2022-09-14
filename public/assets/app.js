@@ -2414,6 +2414,7 @@ var render = function() {
             _vm._l(_vm.genres, function(genre, index) {
               return _c("li", {
                 key: index,
+                class: { active: _vm.currentGenreId === genre.id },
                 domProps: { textContent: _vm._s(genre.name) },
                 on: {
                   click: function($event) {
@@ -2463,6 +2464,8 @@ var render = function() {
               _vm._l(_vm.genres, function(genre, index) {
                 return _c("li", {
                   key: index,
+                  staticClass: "nav-link",
+                  class: { active: _vm.currentGenreId === genre.id },
                   domProps: { textContent: _vm._s(genre.name) },
                   on: {
                     click: function($event) {

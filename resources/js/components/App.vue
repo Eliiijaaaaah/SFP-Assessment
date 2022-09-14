@@ -5,7 +5,7 @@
 				<div>
 					<img class="logo" src="/assets/images/logo-01.png" />
 					<ul class="desktop-menu">
-						<li v-for="(genre, index) in genres" @click="currentGenreId = genre.id" :key="index" v-text="genre.name"></li>
+						<li v-for="(genre, index) in genres" @click="currentGenreId = genre.id" :key="index" v-text="genre.name" :class="{active:currentGenreId === genre.id}"></li>
 					</ul>
 					<div class="hamburger closed" onClick="toggleMenu()">
 						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -15,7 +15,7 @@
 					<div class="mobile-menu">
 
 						<ul>
-							<li v-for="(genre, index) in genres" @click="currentGenreId = genre.id" :key="index" v-text="genre.name"></li>
+							<li class="nav-link" v-for="(genre, index) in genres" @click="currentGenreId = genre.id" :key="index" v-text="genre.name" :class="{active:currentGenreId === genre.id}"></li>
 						</ul>
 
 					</div>
