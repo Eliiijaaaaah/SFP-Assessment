@@ -75,6 +75,7 @@ ul {
 
 ul > .active {
   color: #ffffff;
+  font-family: "Lato Black", sans-serif;
 }
 
 nav > div > ul {
@@ -87,13 +88,20 @@ nav > div > ul {
 
 nav > div > ul > li {
   display: inline-block;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
   font-size: 16px;
+  cursor: pointer;
 }
 
 nav > div {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.dnone {
+  display: none;
 }
 
 .logo {
@@ -102,7 +110,6 @@ nav > div {
   -webkit-filter: invert(100%);
           filter: invert(100%);
   position: relative;
-  z-index: 1;
 }
 
 .hero-text {
@@ -142,17 +149,48 @@ nav > div {
 .app > h2 {
   text-transform: uppercase;
   font-size: 62px;
+  font-family: "Lato Black", sans-serif;
+}
+
+.paginate {
+  padding-left: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .paginate > li {
   font-size: 16px;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
   color: #3f3f3f;
   text-decoration: none;
   display: inline-block;
 }
 
+.paginate > li:first-child {
+  margin-left: 0;
+  background-color: #b8b8b88f;
+  color: #ffffff;
+}
+
+.paginate > li:last-child {
+  margin-right: 0;
+  background-color: #b8b8b88f;
+  color: #ffffff;
+}
+
+.paginate > .active {
+  background-color: #009fd9;
+  color: #ffffff;
+}
+
 .mobile-menu {
+  display: none;
+}
+
+.mobile-submenu {
   display: none;
 }
 
@@ -160,9 +198,26 @@ nav > div {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
+  nav > div {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+
+@media only screen and (max-width: 562px) {
+  .hero-text > h1 {
+    font-size: 58px;
+  }
+
+  .app > h2 {
+    font-size: 54px;
+  }
+
   .hero-text {
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .desktop-menu {
@@ -175,18 +230,36 @@ nav > div {
     float: right;
     padding: 1rem;
     position: relative;
-    z-index: 1;
   }
 
   .mobile-menu {
     z-index: 0;
-    padding-top: 50px;
     height: 100vh;
     width: 100%;
     position: fixed;
     right: 0;
     top: 0;
     background-color: #111111;
+  }
+
+  .mobile-submenu {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    color: #b8b8b8;
+  }
+
+  .mobile-submenu > li {
+    padding-right: 0.5rem;
+  }
+
+  .mobile-submenu > li:not(:last-child)::after {
+    padding-left: 0.5rem;
+    content: "|";
   }
 
   .mobile-menu > ul {
@@ -199,6 +272,7 @@ nav > div {
   .mobile-menu > ul > li {
     padding: 1rem;
     font-size: 22px;
+    cursor: pointer;
   }
 }
 
