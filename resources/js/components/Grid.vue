@@ -7,13 +7,13 @@
 			<!-- 1. Add logic to these pagination links so they appear on the page correctly. -->
 			<!-- 2. Add click events that update the page variable. -->
 			<!-- [First] [3] [4] [5] [Last] -->
-			<a href="#movies">First</a>
-			<a href="#movies">{{ page - 2 }}</a>
-			<a href="#movies">{{ page - 1 }}</a>
-			<a href="#movies" class="current">{{ page }}</a>
-			<a href="#movies">{{ page + 1 }}</a>
-			<a href="#movies">{{ page + 2 }}</a>
-			<a href="#movies">Last</a>
+			<paginate
+			  :page-count="20"
+			  :click-handler="onChangePage"
+			  :prev-text="'Prev'"
+			  :next-text="'Next'"
+			  :container-class="'paginate'">
+			</paginate>
 		</div>
 	</div>
 </template>
@@ -55,10 +55,32 @@ export default {
 			// 1. Make an ajax request to TMDb with the correct page and genre.
 			// 2. Update the following variables: movies, totalPages.
 
-			// 
-			// Your code here. 
 			//
-		}
+			// Your code here.
+			//
+			var vm = this;
+      var key = 'e374acbfa925b84e2ade3abfddf48f5f';
+      $.ajax({
+          type: 'GET',
+          url: 'https://api.themoviedb.org/3/discover/movie/?api_key='+key+'&language=en-US&page='+vm._data.page+'&with_genres='+vm._props.genre,
+          async: false,
+          contentType: 'application/json',
+          dataType: 'jsonp',
+          success: function(json) {
+							vm._data['movies'] = json['results'];
+							vm._data['totalPages'] = json['total_pages'];
+          },
+          error: function(e) {
+              console.log(e.message);
+          }
+    	});
+
+		},
+
+		onChangePage(pageOfItems) {
+        // update page of items
+				this._data.page = pageOfItems;
+    }
 	}
 
 }

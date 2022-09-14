@@ -28,7 +28,9 @@
     },
     "dependencies": {
         "axios": "^0.18.1",
-        "vue": "^2.6.10"
+        "jw-vue-pagination": "^1.0.3",
+        "vue": "^2.6.10",
+        "vuejs-paginate": "^2.1.0"
     },
     "author": "SFP",
     "license": "ISC"
